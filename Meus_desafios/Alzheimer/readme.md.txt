@@ -1,0 +1,1 @@
+Fiz esse "site" informando sobre o Alzheimer quando comecei a estudar, com objetivo de colocar o que eu sabia até aquele momento em prática. Futuramente pretendo alterar esse projeto, colocar um menu de navegação e diversas outras coisas. Por enquanto, podemos dizer que essa é a VERSÃO 1.0.

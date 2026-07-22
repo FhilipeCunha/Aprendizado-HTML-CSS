@@ -1,0 +1,1 @@
+Bom, esse projeto é muito complexo, e ainda está na sua primeira fase. Unindo Front-End e Back-End em um projeto com Objetivo final de criar um MINI-GAME RPG com 3 Classes (Mago, Guerreiro e Arqueiro) que poderam ser escolhidas pelo jogador, sendo um RPG de mesa, portanto, suas escolhas tem consequências. 

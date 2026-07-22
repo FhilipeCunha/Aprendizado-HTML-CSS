@@ -1,0 +1,1 @@
+Bom, eu comecei a criar esse projeto, com a intenção de ser uma página de notícias sobre o Mundo atualmente. Ele não está 100% completo, estou modificando ele, de pouquinho em pouquinho mas estou.
