@@ -1,0 +1,1 @@
+Nesta página, está todos os meus projetos até o momento, tudo que eu aprendi, coloquei em prática. É pouco por enquanto, mas tenho muitos projetos em mente para fazer e públicar, assim querendo inovar com 1 novo toda semana.
