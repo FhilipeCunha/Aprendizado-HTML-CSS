@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClasses</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        div{
+            background-color: lightgray;
+            text-align: center;
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        #d1{
+            background-color:  white;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div:hover{
+            color: deeppink;
+            background-color: blueviolet;
+        }
+        a{
+            display:flex;
+            justify-content: center;    
+            align-items: center;     
+        }
+        a:visited{
+            color: purple;
+        }
+        #d3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        #d3:visited{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3"><a href="hover.html">Próxima página</a></div>
+
+</body>
+</html>

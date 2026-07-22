@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: #7cba8194;
+    font: 15px "Montserrat", sans-serif;
+}
+
+#Titulo_principal{
+    text-align: center;
+    color: #1871BA;
+    }
+
+.subtitulos{
+    color: #30BA00;
+    font-weight: bold;
+}
+
+.basico{
+    color: #BA7B18;
+    font-weight: normal;
+}
+
+.intermediario{
+    color: #f059ca;
+    font-weight: bold;
+}
+
+.avancado{
+    color: #f03939;
+    font-weight: bolder;
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagem/Gemini_Generated_Image_19jhcs19jhcs19jh.png);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+input{
+    width: 230px;
+    height: 30px;
+    text-align: justify;
+    padding-left: 10px;
+    border-radius: 6px;
+}
+
+#continuar{
+    color: rgb(255, 255, 255);
+    width: 240px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#google{
+    color: black;
+    width: 240px;
+    height: 30px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: medium;
+}
+
+a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+p{
+    color: #140202;
+    font-weight: 400;
+    padding: 10px 0px 5px;
+}

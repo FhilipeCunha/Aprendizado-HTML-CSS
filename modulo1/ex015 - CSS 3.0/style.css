@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#title{
+    color: rgb(128, 29, 128)
+}
+
+body {
+    background-color: rgba(170, 0, 255, 0.445);
+    font-size: 20px;
+}
+
+h1{
+    color: purple;
+}
+h2 {
+    color: white;
+    font-family: Courier New, Courier, 'monospace';
+}
+p {
+    
+    text-align: left;
+    }
+
+
+.pag2 {
+    text-align: center;
+    color: black;
+}

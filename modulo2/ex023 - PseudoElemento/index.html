@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElemento</title>
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        a{
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:visited{
+            color: rgb(252, 25, 25);
+        }
+
+        a:active{
+            color:darkred;
+        }
+
+        a::after{
+            content: " <-";
+            font-weight: normal;
+        }
+
+        a::before{
+            font-weight: normal;
+            content: " ";
+            font-size:  20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links Personalizados</h1>
+    <ul>
+        <li><a href="youtube.com" target="_blank" rel="external">Youtube</a></li>
+        <li><a href="Instagram.com" target="_blank" rel="external" >Instagram</a></li>
+        <li><a href="caixas.html" target="_blank" rel="external">Caixas</a></li>    
+    </ul>
+</body>
+</html>

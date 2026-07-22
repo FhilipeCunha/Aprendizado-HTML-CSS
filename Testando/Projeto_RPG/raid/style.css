@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagens/fundo_dugeon.png);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    height: 12.5em;
+    width: 12.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bolder;
+    gap: 16px;
+}
+
+.alinhar{
+    display: flex;
+    gap: 6px;
+    flex-direction: row;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+button{
+    font-size: 2em;
+    color: #000000;
+    cursor: pointer;
+}
+
+a{
+    font-size: bolder;
+    color:  rgba(255, 255, 255, 0.705);
+}

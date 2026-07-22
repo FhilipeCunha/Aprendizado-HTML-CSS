@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="alinhar">
+            <p>Raid
+                <div class="cronometro-container">
+                    <span id="tempo">5</span>s
+                </div>
+            </p>
+        </div>
+        <button id="btn-iniciar">Iniciar Raid</button>
+        <a href="../inicio_rpg.html">Página principal</a>
+    </main>
+    <script>
+       // Aguarda o HTML carregar para garantir que os elementos existem
+    window.onload = function() {
+    const botaoIniciar = document.getElementById('btn-iniciar');
+    const elementoTempo = document.getElementById('tempo');
+    
+    // Essa variável vai impedir que o jogador clique várias vezes e acelere o tempo
+    let cronometroRodando = false; 
+
+    botaoIniciar.addEventListener('click', function() {
+        // Se o cronômetro já estiver rodando, não faz nada
+        if (cronometroRodando) return; 
+        
+        cronometroRodando = true;
+        let tempoRestante = 5;
+        elementoTempo.textContent = tempoRestante; // Garante que começa em 5
+
+        const contagemRegressiva = setInterval(() => {
+            tempoRestante--;
+            elementoTempo.textContent = tempoRestante;
+            
+            if (tempoRestante <= 0) {
+                clearInterval(contagemRegressiva);
+                elementoTempo.textContent = "0";
+                cronometroRodando = false; // Permite iniciar novamente depois
+                tempoEsgotado(); 
+            }
+        }, 1000);
+    });
+
+    function tempoEsgotado() {
+        alert("A Dungeon começou");
+    }
+};  
+    </script>
+</body>
+</html>

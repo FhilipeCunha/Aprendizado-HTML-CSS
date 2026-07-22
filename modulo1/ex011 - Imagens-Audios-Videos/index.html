@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <section>
+        <h1>Imagens Dinamicas, mudando tamanho das Imagens</h1>
+        <picture>
+            <source media="(max-width: 700px)" srcset="icones/foto-p.png" type="image/png">
+            <source media="(max-width: 1000px)" srcset="icones/foto_m.png" type="image/png">
+            <img src="icones/foto-g.png" alt="Foto_grande">
+        </picture>
+    </section>
+
+    <section>
+        <h2>Reproduzindo Áudios</h2>
+        <audio src="midia/hungriahiphop-amor-e-fe-a4c807bb.mp3" preload="metadata" controls></audio>
+    </section>
+
+    <section>
+        <h2>Seção de vídeos</h2>
+        <video src="videos/13142105_2160_3240_30fps.mp4" width="300" controls >
+            <source src="videos/16213150_1080_1920_60fps.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    <section>
+        <h2>Videos pelo Vimeo</h2>
+            <iframe src="https://player.vimeo.com/video/29315013?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="250" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Animation Reel"></iframe>
+        <h2>Outro Video pelo Vimeo</h2>
+            <iframe src="https://player.vimeo.com/video/476863648?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="169" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Animation_Reel"></iframe>
+    </section>
+</body>
+</html>

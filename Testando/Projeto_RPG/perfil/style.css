@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 400px;
+    background-color: #00000080;
+    border-radius: 25px;
+    padding: 12px 48px;
+    backdrop-filter: blur(8px);
+    color: #3C342A;
+    font-weight: bolder;
+    letter-spacing: 2px;    
+    text-shadow: 1px 1px 1px black;
+    background-image: url(../imagens/fundo_perfil.png);
+    background-size: cover;
+    background-position: center;
+    gap: 8px;
+}
+
+h1{
+    color:#E6D5B8;
+}
+body{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/fundo_reserva.png);
+}
+
+a{  
+    color: #E6D5B8;
+} 
+
+/* Fundo da Barra de Progresso*/
+
+progress{
+    -webkit-appearance: none; /* Tirando a aparencia que o Navegador da a barra de progresso */
+    -moz-appearance: none; /* Tirando a aparencia que o Navegador da a barra de progresso */
+    appearance: none; /* Tirando a aparencia que o Navegador da a barra de progresso*/
+    width: 150px; /* Ajustando a Largura */
+    height: 14px; /* Ajustando a Altura da barra de progresso*/
+    border: none; /* Tira a borda antiga da barra de Progressp */
+    background-color: #8b5f3500; /* */
+    border-radius: 8px; /* Arrumando a borda da barra de progresso, deixando-a mais "redondinha" */
+    box-shadow: inset    0 2px 4px rgba(15, 15, 15, 0.6);  /* Dando um sombreamento para a barra de progresso*/
+    position: relative; /* Usado para ajustar o pino marcador mais abaixo*/
+}
+
+progress::-webkit-progress-bar{
+    background-color: #5c3e21; /* Definindo a cor de fundo da Barra de Progresso*/
+    border-radius: 8px;
+    box-shadow: inset 0 0px 2px rgba(0, 0, 0, 0.6); /* Na base superior da barrra, adiciona um efeito mais escuro*/
+}
+progress::-webkit-progress-value{
+    background-image: linear-gradient(to bottom,#07fd59a9,#00000010); /* Muda a cor da barra de progresso para marrom claro*/
+    border-radius: 4px 0 0 6px;  /*Ajustando a borda da própria Barra de Progresso, de forma contectiva com as de cima*/
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.4); /* Ajustando a cor  do meio de progresso, no caso, do marrom, deixando-o mais escuro*/
+    
+} 
+
+li{
+    padding: 6px;
+    
+}
+
+
+.cronometro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif; /* Ou a fonte rústica que escolheu */
+    font-size: 2.5rem;
+    color: #8B3E2F; /* Vermelho ferrugem */
+    background-color: #1A1A1A; /* Fundo carvão */
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #5c3e21; /* Borda de madeira */
+    width: 100px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
