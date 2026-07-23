@@ -1,10 +1,11 @@
-@charset "UTF- 8";
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -14,55 +15,92 @@
 
 /*----------------------------------------------------------------------------------------------------------------*/
 
+html{
+    font-size: 100%;
+}
+
 body{
     background-image: linear-gradient(to right, #84B9D9,#233050);
+    min-height: 100vh;
 }
 
 main{
     display: flex;
+    flex-wrap: wrap;               
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    gap: 16px;                    
+    padding: 16px;
 }
 
 header{
     text-align: center;
     color: white;
-    font-size: 2.2em;
+    font-size: clamp(1.4em, 4vw, 2.2em);   
+    padding: 12px;
 }
 
 h1{
     text-shadow: 3px 2px black;
-    font-family:"Montserrat"
+    font-family:"Montserrat";
 }
 
-#mod1{
-    width: 33%;
-    height: 40vw;
+/*----------------------------------------------------------------------------------------------------------------*/
+#mod1, #mod2, #projetos{
+    flex: 1 1 300px;       
+    max-width: 420px;      
+    min-height: 400px;
+    height: auto;          
     border-radius: 10px;
-    border: 4px solid red;
-    margin-right: 6px;
-    margin-left: 6px;
-    background-color: var(--cor1);
     font-family: sans-serif;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
     text-align: left;
     padding: 10px;
+    background-color: var(--cor1);
+    color: white;
 }
 
-#mod1 h2{
+#mod1{
+    border: 4px solid red;
+}
+
+#mod2{
+    border: 4px solid orangered;
+}
+
+#projetos{
+    border: 4px solid purple;
+    border-radius: 6px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+#mod1 h2,
+#mod2 h2{
     padding: 6px;
     color: white;
     text-align: center;
-    font-size: 4em;
-    
+    font-size: clamp(1.8em, 5vw, 4em);  
 }
 
-#mod1  a{
+#projetos h2{
+    padding: 6px;
+    text-align: center;
+    font-size: clamp(1.6em, 4vw, 3em);
+    color: white;
+    margin: 6px;
+}
+
+#mod1 a,
+#mod2 a,
+#projetos a{
     color: rgb(247, 247, 247);
     text-decoration: none;
 }
 
-#mod1 a:hover{
+#mod1 a:hover,
+#mod2 a:hover,
+#projetos a:hover{
     text-decoration: underline;
     color: #4aa6df;
 }
@@ -71,109 +109,37 @@ h1{
     font-weight: bolder;
 }
 
-#mod1 p{
-    padding: 10px;
-    color: white;
-    font-weight: bolder;
-    font-size: 1.5em;
-}
-
-#mod1 ul{ 
-    padding: 10px;
-    font-size: 1.5em;
-    list-style-type: "\☑️";
-    list-style-position: inside;
-    color: white;
-    font-weight: normal;
-}
-
-.introducao{
-    font-size: 2.2em;
-    margin-top: 8px;
-    padding-bottom: 6px;
-}
-
-.explicacao{
-    padding: 12px;
-    margin-top: auto;
-    text-align: left;
-}
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-#mod2{
-    width: 33%;
-    height: 40vw;
-    background-color: var(--cor1);
-    border: 4px solid orangered;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-left: 6px;
-    font-family: sans-serif;
-    color: white;
-    box-shadow: 0 4px 15px rgb(0, 0, 0);
-    text-align: left;
-    padding: 10px;
-}
-
-#mod2 h2{
-    padding: 6px;
-    text-align: center;
-    font-size: 4em;
-    color: white;
-}
-
-#mod2 ul{
-    list-style-position: inside;
-    list-style-type: "\☑️";
-    padding: 10px;
-    font-size: 1.4em;
-    color: white;
-    font-weight: normal;
-}
-#mod2  a{
-    color: rgb(247, 247, 247);
-    text-decoration: none;
-}
-
-#mod2 a:hover{
-    text-decoration: underline;
-    color: #4aa6df;
-}
-
+#mod1 p,
 #mod2 p{
     padding: 10px;
     color: white;
     font-weight: bolder;
-    font-size: 1.5em;
-}
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-#projetos{
-    width: 33%;
-    height: 40vw;
-    background-color: var(--cor1);
-    border: 4px solid purple;
-    border-radius: 6px;
-    margin-right: 6px;
-    font-family: sans-serif;
-    box-shadow: 0 4px 15px rgb(0, 0, 0);
-    text-align: left;
-    padding: 10px;
-}
-
-#projetos h2{
-    padding: 6px;
-    text-align: center;
-    font-size: 3em;
-    color: white;
-    margin: 6px;
+    font-size: clamp(1em, 2.5vw, 1.5em);
 }
 
 #projetos p{
     color: white;
     font-weight: bolder;
     margin: 4px;
+    font-size: clamp(0.9em, 2vw, 1.2em);
+}
+
+#mod1 ul{
+    padding: 10px;
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    list-style-type: "\☑️";
+    list-style-position: inside;
+    color: white;
+    font-weight: normal;
+}
+
+#mod2 ul{
+    list-style-position: inside;
+    list-style-type: "\☑️";
+    padding: 10px;
+    font-size: clamp(0.95em, 2.3vw, 1.4em);
+    color: white;
+    font-weight: normal;
 }
 
 #projetos ul{
@@ -186,17 +152,7 @@ h1{
 
 #projetos li{
     padding-top: 6px;
-    font-size: 21.60px;
-}
-
-#projetos  a{
-    color: rgb(247, 247, 247);
-    text-decoration: none;
-}
-
-#projetos a:hover{
-    text-decoration: underline;
-    color: #4aa6df;
+    font-size: clamp(1rem, 2vw, 1.35rem)
 }
 
 #projetos .informacoes{
@@ -205,7 +161,64 @@ h1{
 }
 
 .informacoes > li{
-    font-size: 2em;
+    font-size: clamp(1.2em, 3vw, 2em);
     padding-top: 6px;
     color: white;
+}
+
+.introducao{
+    font-size: clamp(1.4em, 3.5vw, 2.2em);
+    margin-top: 8px;
+    padding-bottom: 6px;
+}
+
+.explicacao{
+    padding: 12px;
+    margin-top: auto;
+    text-align: left;
+}
+
+@media (max-width: 1024px){
+    #mod1, #mod2, #projetos{
+        flex: 1 1 280px;
+        min-height: 380px;
+    }
+}
+
+@media (max-width: 768px){
+    main{
+        gap: 12px;
+        padding: 12px;
+    }
+
+    #mod1, #mod2, #projetos{
+        flex: 1 1 45%;
+        max-width: 100%;
+        min-height: 350px;
+    }
+
+    header{
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    #mod1, #mod2, #projetos{
+        width: 100%;
+        max-width: 100%;
+        flex: 1 1 auto;
+        min-height: auto;
+    }
+
+    #mod1 h2,
+    #mod2 h2,
+    #projetos h2{
+        font-size: 2em;
+    }
 }
