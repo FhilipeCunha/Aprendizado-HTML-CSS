@@ -3,57 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Estudos de HTML e CSS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #1a73e8;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background: #fff;
-            margin: 10px 0;
-            padding: 12px 15px;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-        }
-        a {
-            text-decoration: none;
-            color: #1a73e8;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Repositório HTML/CSS</title>
 </head>
 <body>
+    <header>
+        <h1>HTML - CSS</h1>
+    </header>
+    <main>
+        <section id="mod1">
+            <h2>MODULO 1</h2>
+            <p class="introducao">Introdução → <a href="#">LEIA-ME</a></p>
+            <ul>
+                <li>DESAFIO 01 → <a href="#">Imagem Responsiva</a></li>
+                <li>DESAFIO 02 → <a href="#">Tags ABBR</a></li>
+                <li>DESAFIO 03 → <a href="#">Músicas Centralizadas</a></li>
+            </ul>
+            <p>Link das aulas → <a href="#">AULAS</a> 1 - 15</p>
+            <p class="explicacao">Este módulo marca o início do meu aprendizado de <strong>HTML5 e CSS</strong>3. Ele contém pastas de <strong>AULAS</strong> desenvolvidas junto com o professor</p>
+        </section>
 
-    <h1>Meus Estudos de HTML5 e CSS3</h1>
-    <p>Selecione abaixo o exercício ou desafio que deseja visualizar:</p>
+        <section id="mod2">
+            <h2>MODULO 2</h2>
+            <p class="introducao">Introdução → <a href="#">LEIA-ME</a></p>
+            <ul>
+                <li>DESAFIO RESPONSIVO → <a href="#">InDroid</a></li>
+            </ul>
+            <p>Link das aulas → <a href="#">AULAS 16 - 24</a></p>
+            <p class="explicacao">Neste módulo, nos aprofundamos em HTML5 e CSS3, explorando conceitos como Margin, Padding, Display (Inline e Box-Level), Pseudoclasses, Pseudoelementos, fontes, cores, classes e IDs. Para finalizar, construímos uma página responsiva através do Desafio Responsivo que nos foi apresentado.</p>
+        </section>
 
-    <h2>Módulo 1</h2>
-    <ul>
-        <li><a href="modulo1/desafio006/">Desafio 06 - Tags HTML</a></li>
-        <!-- Adicione aqui os outros exercicios do Modulo 1 assim: -->
-        <!-- <li><a href="modulo1/NOME-DA-PASTA/">Nome do Desafio</a></li> -->
-    </ul>
-
-    <h2>Módulo 2</h2>
-    <ul>
-        <!-- Exemplo para quando você organizar o módulo 2: -->
-        <!-- <li><a href="modulo2/NOME-DA-PASTA/">Nome do Exercício</a></li> -->
-    </ul>
-
+        <section id="projetos">
+            <h2>Projetos em teste</h2>
+            <p class="introducao">Introdução → <a href="#">LEIA-ME</a></p>
+            <ul>
+                <li>Desafio Alzheimer → <a href="#">Alzheimer</a></li>
+                <li>Desafio Tela de Login → <a href="#">Tela de Login</a></li>
+                <li>Desafio Sobre Guerras → <a href="#">Mundo em Guerra</a></li>
+                <li>Desafio Pinterest → <a href="#">Recriamento do Pinterest</a></li>
+                <li>Desafio Rpg → <a href="#">Começo RPG</a></li>
+            </ul>
+            <hr>
+            <aside>
+                <ul class="informacoes">
+                    <li>Perfil GitHub → <a href="https://github.com/FhilipeCunha">GitHub</a></li>
+                    <li>Perfil Linkedin → <a href="https://www.linkedin.com/in/felipe-cunha-jv/">Linkedin</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
 </body>
 </html>
