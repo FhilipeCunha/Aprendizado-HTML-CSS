@@ -1,0 +1,1 @@
+Me aprofundei em HTML5 e CSS3, explorando conceitos como Margin, Padding, Display (Inline e Box-Level), Pseudoclasses, Pseudoelementos, fontes, cores, classes e IDs. Para finalizar, construímos uma página responsiva através do Desafio Responsivo que nos foi apresentado. Teve também a criação de um projeto na página de "Meus_Desafios".
