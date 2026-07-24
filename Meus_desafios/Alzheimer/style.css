@@ -4,7 +4,6 @@
 
 body {
     background-image: linear-gradient(to bottom, #595859,#8C8C8C);
-    
 }
 h1{   
     color: #67CBD6;    
@@ -30,10 +29,9 @@ h3{
 }
 
 .Imagem{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 #P_img{
@@ -60,6 +58,7 @@ h3{
 main{
     background-color: rgba(255, 255, 255, 0.089);
     border-radius: 20px;
-    width: 800px;
+    width: 80%;
     padding: 15px;
-    margin: auto;}
+    margin: auto;
+}
